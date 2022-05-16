@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Module Object</title>
+</head>
+
+<body>
+    <script type="module">
+
+        import * as vvy from "./scripts/10-module-object.js";
+
+        console.info(vvy.firstName);
+        console.info(vvy.middleName);
+        console.info(vvy.lastName);
+
+        vvy.hello();
+
+        const person = new vvy.Person();
+
+    </script>
+</body>
+
+</html>
