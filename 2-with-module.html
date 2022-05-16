@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>With Module</title>
+    <script type="module" src="scripts/2-say.js"></script>
+</head>
+
+<body>
+    <script type="module">
+
+        import { sayHello, sayGoodBye, name } from "./scripts/2-say.js"
+
+        sayHello("Vivy");
+        sayGoodBye("Vivy");
+
+        console.info(name);
+    </script>
+</body>
+
+</html>
